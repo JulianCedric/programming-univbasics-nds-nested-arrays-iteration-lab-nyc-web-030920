@@ -25,8 +25,9 @@ row_index = 0
 
 while row_index < array.count do 
   element_index = 0 
-  a = array[row_index][element_index] + array[row_index][element_index + 1]
-  if a.to_i == a && a.to_i.even?  
+  a = array[row_index][element_index] 
+  b = array[row_index][element_index + 1]
+  if (a.to_i == a && a.to_i.even?) && (b.to_i == b && a.to_i.even?)  
     total += array[row_index][element_index] 
     total += array[row_index][element_index + 1]
   end
