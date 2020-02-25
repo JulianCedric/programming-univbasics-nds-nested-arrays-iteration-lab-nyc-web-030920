@@ -28,8 +28,7 @@ while row_index < array.count do
   a = array[row_index][element_index] 
   b = array[row_index][element_index + 1]
   if (a.to_i == a && a.to_i.even?) && (b.to_i == b && a.to_i.even?)  
-    total += array[row_index][element_index] 
-    total += array[row_index][element_index + 1]
+    total += a + b 
   end
   row_index += 1
 end
