@@ -49,7 +49,7 @@ while row_index < array.count do
     if array[row_index][element_index] > array[row_index][element_index + 1]
       array[row_index][element_index + 1] = array[row_index][element_index]
       inner_results << array[row_index][element_index]
-    else
+    else 
       array[row_index][element_index] = array[row_index][element_index + 1]
       inner_results << array[row_index][element_index]
     end
