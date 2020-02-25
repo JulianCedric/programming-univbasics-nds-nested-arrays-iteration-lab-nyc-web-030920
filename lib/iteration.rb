@@ -42,10 +42,9 @@ def find_greater_pair(array)
   while row_index < array.count do 
     inner_results = []
     inner_results << array[row_index].max
-    
+    outer_results << inner_results
     row_index += 1
   end
-  outer_results << inner_results
   outer_results
 end
 
