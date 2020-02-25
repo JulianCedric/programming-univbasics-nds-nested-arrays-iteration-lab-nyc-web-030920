@@ -31,32 +31,30 @@ end
 #   [14, 16 * -2.5], 
 #   [Math.sin(1), 19]
 # ]
-
-def find_greater_pair(array)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
 
-outer_results = []
-row_index = 0 
 
-while row_index < array.count do 
+
+def find_greater_pair(array)
+
+  outer_results = []
+  row_index = 0 
+
+  while row_index < array.count do 
   
   element_index = 0 
   inner_results = []
   
-  while array[row_index][element_index] && array[row_index][element_index + 1] do
-    if array[row_index][element_index] > array[row_index][element_index + 1]
-      array[row_index][element_index + 1] = array[row_index][element_index]
-      inner_results << array[row_index][element_index]
-    else 
-      array[row_index][element_index] = array[row_index][element_index + 1]
-      inner_results << array[row_index][element_index]
+    while array[row_index][element_index] && array[row_index][element_index + 1] do
+      inner_results << array[row_index].max
     end
-  end
+  
   outer_results << inner_results
   row_index += 1 
-end
+
+  end
 
 outer_results
 
