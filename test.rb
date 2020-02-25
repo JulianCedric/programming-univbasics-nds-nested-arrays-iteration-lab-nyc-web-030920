@@ -25,7 +25,7 @@ row_index = 0
 
 while row_index < array.count do 
   element_index = 0 
-  if ((array[row_index][element_index]) / 2 == 0)  && ((array[row_index][element_index + 1] / 2 == 0) do
+  if ((array[row_index][element_index]) / 2 == 0)  && ((array[row_index][element_index + 1]) / 2 == 0) do
     total += (array[row_index][element_index] + array[row_index][element_index + 1])
   end
   row_index += 1
